@@ -28,7 +28,6 @@ This tutorial shows how to share resources over the network, including allowing 
    - [Users, Group Policy, and Account Management](https://github.com/AustinmJoseph/Users-Group-Policy-Account-Management/blob/main/README.md)
 
 ---
-
 ### **Step 2: Create Folders on DC-1's C:\ Drive**
 
 1. Open the **C:\** drive on **DC-1**.
@@ -37,6 +36,9 @@ This tutorial shows how to share resources over the network, including allowing 
    - **Write-access**
    - **No-access**
    - **Accounting**
+---
+     
+![a1](https://github.com/user-attachments/assets/522267eb-cfc5-4ba9-b494-d4b34322dcd8)
 
 ---
 
@@ -48,11 +50,26 @@ This tutorial shows how to share resources over the network, including allowing 
    - Click **Share**, then type `domain users` into the "Enter names" field.
    - Click **Add**, and assign **Read** permissions.
 
+---
+
+![ade1](https://github.com/user-attachments/assets/0576cb81-0b7a-4715-8ceb-e7874ed3792c)
+![ade2](https://github.com/user-attachments/assets/4dbe8370-c727-454b-9095-085e016f6341)
+![ade3](https://github.com/user-attachments/assets/c37aa94b-e7ef-46b8-a77c-df6fcef3842b)
+![ade4](https://github.com/user-attachments/assets/105e6fbb-f5b8-4476-b4c4-8ff4956fe943)
+![a5](https://github.com/user-attachments/assets/5b3920a4-76ea-492d-a687-67118075ec6d)
+
+---
+
 2. **Set Permissions for "Write-access" Folder**:
    - Right-click the **Write-access** folder and select **Properties**.
    - Go to the **Sharing** tab.
    - Click **Share**, then type `domain users` again.
    - Click **Add**, and assign **Read/Write** permissions.
+     
+---
+![ade6](https://github.com/user-attachments/assets/231d4b13-7a72-4141-9d13-2b46b6c2e714)
+
+---
 
 3. **Set Permissions for "No-access" Folder**:
    - Right-click the **No-access** folder and select **Properties**.
@@ -73,6 +90,13 @@ This tutorial shows how to share resources over the network, including allowing 
    - **No-access** folder: You should not be able to access this folder.
    - **Read-access** folder: You should only be able to **read** files (modifying files is not allowed).
    - **Write-access** folder: You should be able to **read and write** files (adding or editing documents is allowed).
+     
+---  
+   
+![ade8](https://github.com/user-attachments/assets/2eac2493-9c21-4f38-bbdf-113a0c06df28)
+![a8](https://github.com/user-attachments/assets/1190bb2a-19b2-46a8-913c-3a290bb4cf0e)
+![a9](https://github.com/user-attachments/assets/cae27bf0-1ce0-40cf-8d88-caf988fe1415)
+
 
 ---
 
@@ -80,7 +104,6 @@ This tutorial shows how to share resources over the network, including allowing 
 - You've successfully set up and tested folder permissions within a domain environment.
 - The different access levels (Read, Write, No Access) should now function as expected when accessed from **Client-1**.
 
----
 
   <h2>Security Groups</h2>
 
@@ -94,6 +117,13 @@ This tutorial shows how to share resources over the network, including allowing 
    - Name the new OU `_TEAMS`.
 
 ---
+
+
+
+
+---
+
+
 
 ### **Step 2: Create a New Group for Accountants**
 
