@@ -3,8 +3,8 @@
 </p>
 
 <h1>Network Files and Permission </h1>
-This tutorial shows how to share resources over the network, including allowing users to Read,Write, or Deny access depending on the gorup and using ACtive Directory to make Security Groups.  
 
+This tutorial demonstrates how to share resources over the network while managing access based on user roles. It covers how to configure permissions for users to Read, Write, or Deny access, depending on their group membership. Additionally, we will use Active Directory to create and manage Security Groups to control access efficiently.
 
 <h2>Environments and Technologies Used</h2>
 
@@ -118,8 +118,7 @@ This tutorial shows how to share resources over the network, including allowing 
 
 ---
 
-
-
+![a10](https://github.com/user-attachments/assets/e87532c9-3d51-440e-89e4-deb55229fe69)
 
 ---
 
@@ -130,6 +129,13 @@ This tutorial shows how to share resources over the network, including allowing 
 1. **Create a Group**:
    - Right-click on the newly created **_TEAMS** OU, then select **New** and choose **Group**.
    - Name the group **ACCOUNTANTS**.
+     
+---
+![a10](https://github.com/user-attachments/assets/b85bbcde-01e6-4c48-90fd-53ddf8da0462)
+
+![adey](https://github.com/user-attachments/assets/09ee57a7-f78f-404c-b378-8a26efec52ef)
+
+![a12](https://github.com/user-attachments/assets/3ca83716-8a3f-46d5-b74d-50b79d4c2724)
 
 ---
 
@@ -141,6 +147,9 @@ This tutorial shows how to share resources over the network, including allowing 
    - Go to the **Security** tab.
    - Click **Edit** and add the **ACCOUNTANTS** group.
    - Assign **Read/Write** permissions for the group.
+---
+
+![ade12](https://github.com/user-attachments/assets/b549ce79-c838-494a-a442-eaefe014c9e5)
 
 ---
 
@@ -150,6 +159,10 @@ This tutorial shows how to share resources over the network, including allowing 
 2. Open **File Explorer** and navigate to the **ACCOUNTANTS** folder by typing `\\dc-1` in the address bar.
 3. **Verify Access**:
    - You should not be able to access the **ACCOUNTANTS** folder, as the user isn’t part of the group yet.
+---
+
+![a14](https://github.com/user-attachments/assets/ea33f469-4a06-49e1-855e-a7c4e1287c9a)
+
 
 ---
 
@@ -161,6 +174,10 @@ This tutorial shows how to share resources over the network, including allowing 
    - Right-click on the user and select **Properties**.
    - Go to the **Member Of** tab, click **Add**, and type **ACCOUNTANTS** to add the user to the group.
    - Click **OK** to save the changes.
+---
+
+![adelast](https://github.com/user-attachments/assets/9dea22c5-0a6f-48d6-b4b3-5586600d5836)
+
 
 ---
 
@@ -170,6 +187,10 @@ This tutorial shows how to share resources over the network, including allowing 
 2. Open **File Explorer** and type `\\dc-1` again to access the **ACCOUNTANTS** folder.
 3. **Verify Access**:
    - This time, you should be able to access the **ACCOUNTANTS** folder, as the user is now part of the **ACCOUNTANTS** group with **Read/Write** permissions.
+---
+
+![Capture](https://github.com/user-attachments/assets/d5e8289e-99c2-46ec-b67a-0b0e0d179a15)
+
 
 ---
 
